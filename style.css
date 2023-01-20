@@ -2,3 +2,16 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo{
+    width: 95%;
+    max-width: 373px;
+    margin: 2.4rem 0rem;
+}
