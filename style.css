@@ -1,5 +1,10 @@
 *{
     box-sizing: border-box;
+  
+}
+
+body{
+    background-color: #F5F5F5;
     font-family: 'Inter', sans-serif;
 }
 
@@ -14,4 +19,28 @@ header{
     width: 95%;
     max-width: 373px;
     margin: 2.4rem 0rem;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+    background-color: #FFD18C;
+    padding: 1rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 731px;
+    width: 100%;
+
+   
+}
+
+ul li{
+    font-size: 1.6rem;
 }
