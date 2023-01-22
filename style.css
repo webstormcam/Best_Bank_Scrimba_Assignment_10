@@ -85,7 +85,7 @@ main{
     width: 100%;
 }
 
-.stats{
+.stat-area{
     display: flex;
     flex-direction: column;
     max-width: 529px;
