@@ -41,6 +41,10 @@ ul{
    
 }
 
+button:hover{
+cursor: pointer;
+}
+
 ul li{
     font-size: 1.6rem;
 }
