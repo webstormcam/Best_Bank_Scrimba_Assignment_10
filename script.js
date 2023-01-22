@@ -1,3 +1,5 @@
+const accountStats = document.getElementById('accounts-stats')
+const spendingStats = document.getElementById('spending-stats')
 const accounts = [
     {
         id: 1,
@@ -26,10 +28,7 @@ const accounts = [
             }
            
 
-        ],
-        displayPrice(){
-            console.log(this.spendings)
-        }
+        ]
     },
     {
         id: 2,
@@ -49,38 +48,43 @@ const accounts = [
                 spent: "9.99"
             },
           
-        ],
-        displayPrice(){
-            console.log(this.spendings)
-        }
+        ]
+       
     },
     {
         id: 3,
         title: "Savings",
         balance: "36,500.12",
         spendings: [],
-        displayPrice(){
-            console.log(this.spendings)
-        }
+       
     }
 ]
+renderAcccounts()
+renderButtons()
 
-const accountStats = document.getElementById('accounts-stats')
 
 function renderAcccounts(){
     let accountsOnPage=``
     for(let i = 0; i < accounts.length;i++){
-     let account =`<div onclick="${accounts[i].displayPrice}" class="account">
+     let account =`<div id=${accounts[i].id} class="account">
      <p>${accounts[i].title}</p>
      <p>${accounts[i].balance}</p>
-     
      </div>`   
-
-
-    accountsOnPage+= account
+       accountsOnPage += account
     }
 accountStats.innerHTML = accountsOnPage
 }
 
+function renderButtons(){
+    for(let i= 0; i<accounts.length;i++){
+        document.getElementById(accounts[i].id).addEventListener('click',function(){
+      console.log(`Hello ${accounts[i].id}`)
 
-renderAcccounts()
+        })
+    }
+}
+
+
+
+
+
