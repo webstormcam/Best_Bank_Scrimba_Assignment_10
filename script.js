@@ -82,7 +82,7 @@ function renderButtons(){
             let spendingOnPage =``
             let spendature = ``
           for(let j=0;j<accounts[i].spendings.length;j++){
-           spendature =  `<div style="width:${accounts[i].spendings[j].spent}px;" class="spent">
+           spendature =  `<div style="width:${accounts[i].spendings[j].spent*0.20+350}px;" class="spent">
             <p>${accounts[i].spendings[j].category}</p>
             <p>$${accounts[i].spendings[j].spent}</p>
             
