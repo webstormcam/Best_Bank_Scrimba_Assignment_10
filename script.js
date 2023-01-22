@@ -1,5 +1,5 @@
 const accountStats = document.getElementById('accounts-stats')
-const spendingStats = document.getElementById('spending-stats')
+let spendingStats = document.getElementById('spending-stats')
 const accounts = [
     {
         id: 1,
@@ -76,10 +76,23 @@ accountStats.innerHTML = accountsOnPage
 }
 
 function renderButtons(){
+    
     for(let i= 0; i<accounts.length;i++){
         document.getElementById(accounts[i].id).addEventListener('click',function(){
-      console.log(`Hello ${accounts[i].id}`)
-
+            let spendingOnPage =``
+            let spendature = ``
+          for(let j=0;j<accounts[i].spendings.length;j++){
+           spendature =  `<div style="width:${accounts[i].spendings[j].spent}px;" class="spent">
+            <p>${accounts[i].spendings[j].category}</p>
+            <p>$${accounts[i].spendings[j].spent}</p>
+            
+            </div>
+            `
+            spendingOnPage+=spendature
+    
+          }
+         
+           spendingStats.innerHTML=spendingOnPage
         })
     }
 }
