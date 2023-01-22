@@ -27,7 +27,7 @@ nav{
     width: 100%;
     max-width: 1440px;
     background-color: #FFD18C;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 ul{
@@ -43,4 +43,36 @@ ul{
 
 ul li{
     font-size: 1.6rem;
+}
+
+li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+li a:hover{
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+#payment-options{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+#payment-options button{
+    background-color: #ffffff;
+    border-radius: 2rem;
+    border: 5px solid #FFA724;
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 275.27px;
+    padding: 1rem 1.5rem;
 }
