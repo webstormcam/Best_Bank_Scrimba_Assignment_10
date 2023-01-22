@@ -2,7 +2,7 @@ const accounts = [
     {
         id: 1,
         title: "Main Account",
-        balance: "6700.56",
+        balance: "6,700.56",
         spendings: [
             {
                 category: "Rent",
@@ -29,7 +29,7 @@ const accounts = [
     {
         id: 2,
         title: "Expenses",
-        balance: "5134.63",
+        balance: "5,134.63",
         spendings: [
             {
                 category: "Netflix",
@@ -48,7 +48,27 @@ const accounts = [
     {
         id: 3,
         title: "Savings",
-        balance: "36500.12",
+        balance: "36,500.12",
         spendings: []
     }
 ]
+
+const accountStats = document.getElementById('accounts-stats')
+
+function renderAcccounts(){
+    let accountsOnPage=``
+    for(let i = 0; i < accounts.length;i++){
+     let account =`<div class="account">
+     <p>${accounts[i].title}</p>
+     <p>${accounts[i].balance}</p>
+     
+     </div>`   
+
+
+    accountsOnPage+= account
+    }
+accountStats.innerHTML = accountsOnPage
+}
+
+
+renderAcccounts()

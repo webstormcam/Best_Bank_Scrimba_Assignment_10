@@ -96,4 +96,21 @@ main{
 h2{
     font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.account{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 5px solid #FFA724;
+    border-radius: 1rem;
+    padding: 2.4rem 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.account p{
+    font-size: 1.6rem;
+    font-weight: bold;
 }
