@@ -61,6 +61,7 @@ const accounts = [
 ]
 renderAcccounts()
 renderButtons()
+initialRender()
 
 
 function renderAcccounts(){
@@ -95,6 +96,23 @@ function renderButtons(){
            spendingStats.innerHTML=spendingOnPage
         })
     }
+}
+
+
+function initialRender(){
+    let spendingOnPage =``
+            let spendature = ``
+    for(let j=0;j<accounts[0].spendings.length;j++){
+        spendature =  `<div style="width:${accounts[0].spendings[j].spent*0.20+350}px;" class="spent">
+         <p>${accounts[0].spendings[j].category}</p>
+         <p>$${accounts[0].spendings[j].spent}</p>
+         
+         </div>
+         `
+         spendingOnPage+=spendature
+ 
+       }
+       spendingStats.innerHTML=spendingOnPage
 }
 
 
