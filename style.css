@@ -59,6 +59,7 @@ main{
     flex-direction: column;
     margin-top: 1.5rem;
     align-items: center;
+    padding: 2rem;
 }
 
 #payment-options{
@@ -83,6 +84,8 @@ main{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    max-width: 1200px;
+
 }
 
 .stat-area{
@@ -108,6 +111,11 @@ h2{
     border-radius: 1rem;
     padding: 2.4rem 1.5rem;
     margin-bottom: 1.2rem;
+}
+
+.account:hover{
+    background-color: #FBBF24;
+    cursor: pointer;
 }
 
 .account p{
